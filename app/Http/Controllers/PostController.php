@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\post;
+use App\Http\Resources\Post as PostResource;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,7 +16,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        
+        // Get Posts
+        $posts = Post::latest()->paginate(10);
+        // Return Posts collections as resource
+        return PostResource::collection($posts);
     }
 
     /**

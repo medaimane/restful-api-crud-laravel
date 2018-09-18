@@ -22,4 +22,4 @@ Route::get('/posts','PostController@index');
 Route::get('/posts/{post}','PostController@show');
 Route::post('/posts','PostController@store');
 Route::put('/posts/{post}','PostController@store');
-Route::delete('/posts/{post}','PostController@delete');
+Route::delete('/posts/{post}','PostController@destroy');
