@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -14,17 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        
     }
 
     /**
@@ -50,17 +41,6 @@ class PostController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\post  $post
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(post $post)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -79,6 +59,33 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(post $post)
+    {
+        //
+    }
+
+    /**
+    *   
+    *  For UI
+    *
+    **/
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\post  $post
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(post $post)
     {
         //
     }
