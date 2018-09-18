@@ -14,6 +14,20 @@ class Post extends JsonResource
      */
     public function toArray($request)
     {
+        // return [
+        //     'id' => $this->id,
+        //     'title' => $this->title,
+        //     'content' => $this->content
+        // ];
         return parent::toArray($request);
+    }
+
+    public function with($request)
+    {
+        return [
+            'version' => '1.0.0',
+            'author' => 'mohamed aimane skhairi',
+            'author_url' => url('https://medaimane.github.io')
+        ];
     }
 }

@@ -18,19 +18,9 @@ class PostController extends Controller
     {
         // Get Posts
         $posts = Post::latest()->paginate(10);
+
         // Return Posts collections as resource
         return PostResource::collection($posts);
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**
@@ -40,6 +30,18 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(post $post)
+    {
+        // Return single Post as resource
+        return new PostResource($post);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
     {
         //
     }
