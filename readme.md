@@ -17,4 +17,4 @@ Mohamed Aimane Skhairi
 
 ## License
 
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).
