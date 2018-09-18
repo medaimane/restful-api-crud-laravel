@@ -10,6 +10,7 @@
 ## About Project
 
 Simple crud exemple of RESTful API back-end application using Laravel.
+Version used for this project is 5.7.
 
 ## Repo Author
 
