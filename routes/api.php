@@ -21,5 +21,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/posts','PostController@index');
 Route::get('/posts/{post}','PostController@show');
 Route::post('/posts','PostController@store');
-Route::put('/posts/{post}','PostController@store');
+Route::put('/posts/{post}','PostController@update');
 Route::delete('/posts/{post}','PostController@destroy');
+
+// Test
+Route::post('requestAndresponse', function(Request $request) {
+    return response(['name'=>$request->username], 200)->header('Content-Type', 'application/json');
+});
